@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0ede4; /* Light paper-like color */
+    color: hsl(147, 90%, 31%);
+    margin: 0;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* The Board Container */
+.board {
+    display: flex;
+    flex-wrap: wrap; /* This makes it responsive! */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* The Sticky Note Style */
+.note {
+    background-color: #fff982; /* Classic sticky note yellow,  */
+    width: 250px;
+    min-height: 200px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(25, 5, 61, 0.1);
+    transform: rotate(-1deg); /* Slight tilt for creativity */
+    transition: transform 0.3s ease;
+}
+
+.note:nth-child(even) {
+    transform: rotate(2deg); /* Different tilt for every other note */
+}
+
+.note:hover {
+    transform: scale(1.05) rotate(0deg); /* Straightens and grows on hover */
+    z-index: 10;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #2d5a27;
+    border: 1px solid #2d5a27;
+    padding: 2px 8px;
+}
