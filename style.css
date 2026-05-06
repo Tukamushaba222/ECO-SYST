@@ -80,14 +80,14 @@ header {
   display: block;
 }
 .project-summary {
-  max-width: 800px; /* Keeps the text from stretching too wide */
-  margin: 40px auto; /* Centers the box and adds space above/below */
+  max-width: 800px;
+  margin: 40px auto;
   padding: 30px;
-  border: 3px solid #000000; /* The bold black outline */
-  background-color: #ffffff; /* White background to make the text crisp */
-  border-radius: 8px; /* Slightly rounded corners */
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  border-radius: 8px;
   text-align: center;
-  box-shadow: 8px 8px 0px #000000; /* Optional: A "brutalist" shadow for extra attention */
+  box-shadow: 8px 8px 0px #000000;
 }
 
 .project-summary h2 {
