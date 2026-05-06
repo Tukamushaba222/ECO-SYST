@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0ede4; /* Light paper-like color */
+    background-color: #f0ede4;
     color: hsl(147, 93%, 32%);
     margin: 0;
     padding: 30px;
@@ -18,24 +18,45 @@ header {
   display: flex;
   justify-content: center;
 }
+.project-summary {
+  max-width: 800px; /* Keeps the text from stretching too wide */
+  margin: 40px auto; /* Centers the box and adds space above/below */
+  padding: 30px;
+  border: 3px solid #000000; /* The bold black outline */
+  background-color: #ffffff; /* White background to make the text crisp */
+  border-radius: 8px; /* Slightly rounded corners */
+  text-align: center;
+  box-shadow: 8px 8px 0px #000000; /* Optional: A "brutalist" shadow for extra attention */
+}
+
+.project-summary h2 {
+  margin-top: 0;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.project-summary p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333333;
+}
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px; /* Spacing between buttons */
+  gap: 15px; 
   margin: 0;
   padding: 0;
 }
-
-/* The Green Outline Buttons */
 .nav-btn {
   text-decoration: none;
-  color: #2d5a27; /* Dark eco-green text */
+  color: #2d5a27;
   font-weight: bold;
   font-family: sans-serif;
   font-size: 14px;
   padding: 10px 15px;
-  border: 2px solid #4CAF50; /* The green outline */
+  border: 2px solid #4CAF50;
   border-radius: 5px;
   display: inline-block;
   transition: all 0.3s ease;
@@ -51,7 +72,6 @@ header {
   margin-left: 5px;
 }
 
-/* Dropdown Logic */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -79,34 +99,32 @@ header {
   background-color: #e8f5e9;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .board {
     display: flex;
-    flex-wrap: wrap; /* This makes it responsive! */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-/* The Sticky Note Style */
 .note {
-    background-color: #fff982; /* Classic sticky note yellow,  */
+    background-color: #fff982;
     width: 250px;
     min-height: 200px;
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(25, 5, 61, 0.1);
-    transform: rotate(-1deg); /* Slight tilt for creativity */
+    transform: rotate(-1deg);
     transition: transform 0.3s ease;
 }
 
 .note:nth-child(even) {
-    transform: rotate(2deg); /* Different tilt for every other note */
+    transform: rotate(2deg);
 }
 
 .note:hover {
-    transform: scale(1.05) rotate(0deg); /* Straightens and grows on hover */
+    transform: scale(1.05) rotate(0deg);
     z-index: 10;
 }
 
