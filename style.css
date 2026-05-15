@@ -432,3 +432,42 @@ nav a:hover {
     border-radius: 10px;
     display: block;
 }
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;     
+    margin-top: 20px;
+}
+
+.impact-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.green-btn {
+    background-color: #2d5a27;
+    color: white;
+}
+
+.green-btn:hover {
+    background-color: #3e7a36;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(45, 90, 39, 0.3);
+}
+
+.yellow-btn {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.yellow-btn:hover {
+    background-color: #ffea00;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
