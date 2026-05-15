@@ -217,11 +217,13 @@ justify-content: center;
 }
 
 .method-card {
-    background: #f1f8e9;
+    background: #fff982;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
     border: 1px solid #c8e6c9;
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
 }
 
 .method-card h3 {
