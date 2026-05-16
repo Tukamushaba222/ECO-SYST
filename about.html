@@ -3,97 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Eco-Swap</title>
-
+    <title>About Us | EcoSyst</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-<nav id="navbar">
-    <div class="logo">Eco-Syst</div>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#items">Items</a></li>
-    </ul>
-</nav>
     <nav class="navbar">
-    <div class="navbar-container"> 
-        <div class="dropdown">
-            <button class="nav-btn"> ABOUT US <span class="arrow">▼</span></button>
-            <div class="dropdown-content">
-                <a href="about.html#mission">Our Mission</a>
-                <a href="about.html#offerings">What We Offer</a>
-                <a href="contact.html">Contact</a>
+        <div class="navbar-container"> 
+            <div class="dropdown">
+                <button class="nav-btn">ABOUT US <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="about.html#mission">Our Mission</a>
+                    <a href="about.html#offerings">What We Offer</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
-        </div>
 
-        <a href="#" class="nav-btn">OUR IMPACT</a>
+            <a href="our-impact.html" class="nav-btn">OUR IMPACT</a>
 
-        <div class="dropdown">
-            <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
-            <div class="dropdown-content">
-                <a href="#">Our Community</a>
-                <a href="#">Join Us</a>
+            <div class="dropdown">
+                <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="index.html">Our Community</a>
+                    <a href="#">Join Us</a>
+                </div>
             </div>
-        </div>
 
-        <a href="contact.html"class="nav-btn contact-btn">CONTACT US</a>
-    </div>
-</nav>
+            <a href="contact.html" class="nav-btn contact-btn">CONTACT US</a>
+        </div>
+    </nav>
+
     <main class="about-container">
-    
-    <section class="about-hero">
-        <h1>About EcoSyst</h1>
-        <p>A neighborhood initiative dedicated to reducing waste through community-driven gifting.</p>
-    </section>
+        <section class="about-hero" id="mission">
+            <h1>About EcoSyst</h1>
+            <p>A neighborhood initiative dedicated to reducing waste through community-driven gifting.</p>
+        </section>
 
-    <section class="offerings">
-        <h2>What You Can Swap</h2>
-        <div class="icon-grid">
-            <div class="icon-item">
-                <div class="icon-circle"><i class="fas fa-utensils"></i></div>
-                <span>KITCHEN</span>
+        <section class="offerings" id="offerings">
+            <h2>What You Can Swap</h2>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="fas fa-utensils"></i></div>
+                    <span>KITCHEN</span>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="fas fa-bath"></i></div>
+                    <span>BATHROOM</span>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="fas fa-seedling"></i></div>
+                    <span>HOME & GARDEN</span>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="fas fa-paw"></i></div>
+                    <span>PETS</span>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="fas fa-child"></i></div>
+                    <span>KIDS & BABY</span>
+                </div>
+                <div class="icon-item">
+                    <div class="icon-circle"><i class="fas fa-tools"></i></div>
+                    <span>DIY & TOOLS</span>
+                </div>
             </div>
-            <div class="icon-item">
-                <div class="icon-circle"><i class="fas fa-bath"></i></div>
-                <span>BATHROOM</span>
-            </div>
-            <div class="icon-item">
-                <div class="icon-circle"><i class="fas fa-seedling"></i></div>
-                <span>HOME & GARDEN</span>
-            </div>
-            <div class="icon-item">
-                <div class="icon-circle"><i class="fas fa-paw"></i></div>
-                <span>PETS</span>
-            </div>
-            <div class="icon-item">
-                <div class="icon-circle"><i class="fas fa-child"></i></div>
-                <span>KIDS & BABY</span>
-            </div>
-            <div class="icon-item">
-                <div class="icon-circle"><i class="fas fa-tools"></i></div>
-                <span>DIY & TOOLS</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="how-it-works">
-        <div class="method-card">
-            <h3>Gifting</h3>
-            <p>Give items a second life by passing them to a neighbor in need.</p>
-        </div>
-        <div class="method-card">
-            <h3>Trading</h3>
-            <p>Directly swap items you have for items you actually want.</p>
-        </div>
-        <div class="method-card">
-            <h3>Re-purposing</h3>
-            <p>Share materials and ideas to transform old items into new treasures.</p>
-        </div>
-    </section>
-
-</main>
+        <section class="how-it-works">
+            <div class="method-card">
+                <h3>Gifting</h3>
+                <p>Give items a second life by passing them to a neighbor in need.</p>
+            </div>
+            <div class="method-card">
+                <h3>Trading</h3>
+                <p>Directly swap items you have for items you actually want.</p>
+            </div>
+            <div class="method-card">
+                <h3>Re-purposing</h3>
+                <p>Share materials and ideas to transform old items into new treasures.</p>
+            </div>
+        </section>
+    </main>
 </body>
+</html>

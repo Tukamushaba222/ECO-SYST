@@ -2,44 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoSyst Community</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<nav class="navbar">
-    <div class="navbar-container"> 
-        <div class="dropdown">
-            <button class="nav-btn"> ABOUT US <span class="arrow">▼</span></button>
-            <div class="dropdown-content">
-                <a href="about.html#mission">Our Mission</a>
-                <a href="about.html#offerings">What We Offer</a>
-                <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div class="navbar-container"> 
+            <a href="index.html" class="navbar-logo">
+                <img src="logo.png" alt="ecosyst logo">
+            </a>
+            <div class="dropdown">
+                <button class="nav-btn">ABOUT US <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="about.html#mission">Our Mission</a>
+                    <a href="about.html#offerings">What We Offer</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
-        </div>
 
-        <a href="#" class="nav-btn">OUR IMPACT</a>
+            <a href="our-impact.html" class="nav-btn">OUR IMPACT</a>
 
-        <div class="dropdown">
-            <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
-            <div class="dropdown-content">
-                <a href="#">Our Community</a>
-                <a href="#">Join Us</a>
+            <div class="dropdown">
+                <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="#">Our Community</a>
+                    <a href="#">Join Us</a>
+                </div>
             </div>
+
+            <a href="contact.html" class="nav-btn contact-btn">CONTACT US</a>
         </div>
+    </nav>
 
-        <a href="contact.html"class="nav-btn contact-btn">CONTACT US</a>
-    </div>
-</nav>
-
-<section class="project-summary">
-  <h2>Our Mission</h2>
-  <p>
-    <strong>EcoSyst</strong> is more than just a platform; it is a community-led movement to redefine how we value our resources by turning yesterday’s "clutter" into tomorrow’s treasure. By seamlessly connecting neighbors to gift, trade, and repurpose items, we are not just keeping waste out of our EcoSystems; we are weaving a tighter, more resilient social fabric. Every swap saves money, reduces our collective carbon footprint, and proves that sustainability starts with a single hand-to-hand exchange. Whether you are here to clear your space, find your next favorite thing, or contribute your skills as a collaborator to help our platform grow, we invite you to join us in building a future where nothing goes to waste and everyone belongs.
-  </p>
-</section>
+    <section class="project-summary">
+        <h2>Our Mission</h2>
+        <p>
+            <strong>EcoSyst</strong> is more than just a platform; it is a community-led movement to redefine how we value our resources by turning yesterday's "clutter" into tomorrow's treasure. By seamlessly connecting neighbors to gift, trade, and repurpose items, we are not just keeping waste out of our EcoSystems; we are weaving a tighter, more resilient social fabric. Every swap saves money, reduces our collective carbon footprint, and proves that sustainability starts with a single hand-to-hand exchange. Whether you are here to clear your space, find your next favorite thing, or contribute your skills as a collaborator to help our platform grow, we invite you to join us in building a future where nothing goes to waste and everyone belongs.
+        </p>
+    </section>
 
     <header>
         <h1>EcoSyst Community</h1>
@@ -65,18 +67,5 @@
             <span class="tag">Education & Fun</span>
         </div>
     </main>
-<script>
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        // When scrolled down 80px, add the "shrink" class
-        document.getElementById("navbar").classList.add("shrink");
-      } else {
-        // When at the top, remove it
-        document.getElementById("navbar").classList.remove("shrink");
-      }
-    }
-</script>
 </body>
 </html>

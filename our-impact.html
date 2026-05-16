@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Impact | Eco-Syst</title>
-    
+    <title>Our Impact | EcoSyst</title>
     <link rel="stylesheet" href="style.css">
-    
-    </head>
+</head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="dropdown">
+                <button class="nav-btn">ABOUT US <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="about.html#mission">Our Mission</a>
+                    <a href="about.html#offerings">What We Offer</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
 
-    <nav id="navbar">
-        <div class="logo">Eco-Syst</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="our-impact.html">Our Impact</a></li>
-        </ul>
+            <a href="our-impact.html" class="nav-btn">OUR IMPACT</a>
+
+            <div class="dropdown">
+                <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="index.html">Our Community</a>
+                    <a href="#">Join Us</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="nav-btn contact-btn">CONTACT US</a>
+        </div>
     </nav>
 
     <header class="impact-hero">
@@ -28,25 +41,25 @@
         <section class="impact-board">
             <h2>Support the Drive</h2>
             <p>Proceeds go to educating under-privileged youth and growing our upcycling workshops.</p>
-    <div class="button-group">
-        <button class="impact-btn green-btn">Donate Cash</button>
-        <button class="impact-btn yellow-btn">Donate Materials</button>
-        <button class="impact-btn green-btn">Donate Venue</button>
-        <button class="impact-btn yellow-btn">Donate Service</button>
-        <button class="impact-btn green-btn">Register</button>
-    </div>
+            <div class="button-group">
+                <button class="impact-btn green-btn">Donate Cash</button>
+                <button class="impact-btn yellow-btn">Donate Materials</button>
+                <button class="impact-btn green-btn">Donate Venue</button>
+                <button class="impact-btn yellow-btn">Donate Service</button>
+                <button class="impact-btn green-btn">Register</button>
+            </div>
         </section>
 
         <section class="impact-callout">
-    <div class="callout-content">
-        <p>
-            Transforming a discarded wooden pallet into a sleek coffee table or turning an old pair of jeans into a rugged tote bag is not just a DIY project; it is a direct strike against the "throwaway" culture. 
-        </p>
-        <p class="highlight-text">
-            <strong>Creators and Changemakers:</strong> look at a piece of waste for what it could be. Document your "before and after" journey by crafting a cleaner future with your own hands. <strong>Upcycle the trends!</strong>
-        </p>
-    </div>
-</section>
+            <div class="callout-content">
+                <p>
+                    Transforming a discarded wooden pallet into a sleek coffee table or turning an old pair of jeans into a rugged tote bag is not just a DIY project; it is a direct strike against the "throwaway" culture. 
+                </p>
+                <p class="highlight-text">
+                    <strong>Creators and Changemakers:</strong> look at a piece of waste for what it could be. Document your "before and after" journey by crafting a cleaner future with your own hands. <strong>Upcycle the trends!</strong>
+                </p>
+            </div>
+        </section>
 
         <section class="impact-board gallery-board">
             <h2>Community Inspiration Gallery</h2>
@@ -59,16 +72,5 @@
             <button class="cta-link">Document Your Transformation →</button>
         </section>
     </main>
-
-    <script>
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").classList.add("shrink");
-          } else {
-            document.getElementById("navbar").classList.remove("shrink");
-          }
-        }
-    </script>
 </body>
 </html>

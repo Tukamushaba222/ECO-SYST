@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Eco-Swap</title>
+    <title>Contact Us | EcoSyst</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav class="navbar">
-        <div class="logo"><Eco-Syst></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="our-impact.html">Our Impact</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
-        </ul>
+        <div class="navbar-container"> 
+            <div class="dropdown">
+                <button class="nav-btn">ABOUT US <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="about.html#mission">Our Mission</a>
+                    <a href="about.html#offerings">What We Offer</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <a href="our-impact.html" class="nav-btn">OUR IMPACT</a>
+
+            <div class="dropdown">
+                <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="index.html">Our Community</a>
+                    <a href="#">Join Us</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="nav-btn contact-btn">CONTACT US</a>
+        </div>
     </nav>
 
     <main class="contact-container">
@@ -38,6 +52,5 @@
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </main>
-
 </body>
 </html>
