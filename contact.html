@@ -8,9 +8,17 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="logo.png" alt="ecosyst logo"> 
+        <a href="index.html" class="navbar-logo">
+            <img src="logo.png" alt="ecosyst logo">
+        </a>
+        
+        <button class="hamburger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="navbar-container"> 
             <div class="dropdown">
                 <button class="nav-btn">ABOUT US <span class="arrow">▼</span></button>
                 <div class="dropdown-content">
@@ -54,43 +62,92 @@
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </main>
-    <section class="contact-section">
-    <div class="contact-container">
-        <h2>Get Involved with Eco-Syst</h2>
-        <p>Select an option below to donate or register and support our community upcycling drive.</p>
-
-        <form class="ecosyst-form">
-            <div class="form-group">
-                <label for="action-type">How would you like to support us?</label>
-                <select id="action-type" name="actionType" required>
-                    <option value="" disabled selected>-- Choose an option --</option>
-                    <option value="cash">Donate Cash</option>
-                    <option value="materials">Donate Materials</option>
-                    <option value="venue">Donate Venue</option>
-                    <option value="service">Donate Service</option>
-                    <option value="register">Register for the Drive</option>
-                </select>
-            </div>
-
-            <div class="form-grid">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="fullName" placeholder="John Doe" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About EcoSyst</h3>
+                <p>A community-led movement to redefine how we value our resources by turning yesterday's clutter into tomorrow's treasure.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
                 </div>
             </div>
 
-            <div class="form-group">
-                <label for="details">Additional Details</label>
-                <textarea id="details" name="details" rows="5" placeholder="Tell us more about your donation or registration details here..." required></textarea>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="our-impact.html">Our Impact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Join Community</a></li>
+                </ul>
             </div>
 
-            <button type="submit" class="submit-btn">Submit Request</button>
-        </form>
-    </div>
-</section>
+            <div class="footer-section">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="#">Donate Materials</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Host Workshop</a></li>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">Community Events</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest community trades and upcycling events!</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 EcoSyst Community. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navContainer = document.querySelector('.navbar-container');
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navContainer.classList.toggle('active');
+        });
+        
+        // Mobile dropdown handling
+        dropdowns.forEach(dropdown => {
+            const btn = dropdown.querySelector('.nav-btn');
+            btn.addEventListener('click', (e) => {
+                if (window.innerWidth < 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar')) {
+                hamburger.classList.remove('active');
+                navContainer.classList.remove('active');
+                dropdowns.forEach(d => d.classList.remove('active'));
+            }
+        });
+    </script>
 </body>
 </html>
