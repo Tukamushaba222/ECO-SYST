@@ -8,7 +8,10 @@
 </head>
 <body>
     <nav class="navbar">
-
+        <a href="index.html" class="navbar-logo">
+            <img src="logo.png" alt="ecosyst logo">
+        </a>
+        
         <span class="navbar-brand">EcoSyst</span>
         
         <button class="hamburger-menu" aria-label="Toggle menu">
@@ -326,6 +329,7 @@
         const hamburger = document.querySelector('.hamburger-menu');
         const navContainer = document.querySelector('.navbar-container');
         const dropdowns = document.querySelectorAll('.dropdown');
+        const navbar = document.querySelector('.navbar');
         
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
@@ -352,6 +356,20 @@
             }
         });
 
+        // Navbar scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
         // Smooth scroll to form sections
         document.addEventListener('DOMContentLoaded', () => {
             if (window.location.hash) {
