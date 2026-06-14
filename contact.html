@@ -1,386 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | EcoSyst</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta 
+        name="description" 
+        content="Contact EcoSyst - Get in touch with our team, register as member, volunteer, or make a donation"
+    />
+    <meta 
+        name="keywords" 
+        content="contact, register, volunteer, donate, get involved"
+    />
+    
+    <!-- Icon Libraries -->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>Contact Us - EcoSyst Community</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <a href="index.html" class="navbar-logo">
-            <img src="logo.png" alt="ecosyst logo">
-        </a>
-        
-        <span class="navbar-brand">EcoSyst</span>
-        
-        <button class="hamburger-menu" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        
-        <div class="navbar-container"> 
-            <div class="dropdown">
-                <button class="nav-btn">ABOUT US <span class="arrow">▼</span></button>
-                <div class="dropdown-content">
-                    <a href="about.html#mission">Our Mission</a>
-                    <a href="about.html#offerings">What We Offer</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="navbar-brand">EcoSyst</span>
+            </a>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <input type="checkbox" id="menu-toggle" />
+            <div class="mobile-menu">
+                <label for="menu-toggle" class="menu">
+                    <span></span>
+                </label>
             </div>
-
-            <a href="our-impact.html" class="nav-btn">OUR IMPACT</a>
-
-            <div class="dropdown">
-                <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
-                <div class="dropdown-content">
-                    <a href="index.html">Our Community</a>
-                    <a href="contact.html#register">Register</a>
-                </div>
-            </div>
-
-            <a href="contact.html" class="nav-btn contact-btn">CONTACT US</a>
+            
+            <!-- Navigation Links -->
+            <ul class="navbar-container">
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="about.html" class="nav-btn">About Us</a></li>
+                <li><a href="our-impact.html" class="nav-btn">Our Impact</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+                <li class="nav-buttons">
+                    <a href="#donate" class="primary-button">Donate</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <main class="contact-page">
-        <div class="contact-header">
-            <h1>Get in Touch</h1>
-            <p>Choose how you'd like to connect with us or support our mission</p>
+    <!-- Page Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Get in Touch</div>
+                <h1 class="hero-title">
+                    Connect With 
+                    <span class="hero-gradient-text">EcoSyst</span>
+                </h1>
+                <p class="hero-description">
+                    Have questions? Want to get involved? We'd love to hear from you. Reach out and let's create positive environmental change together.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <div class="forms-container">
-            <!-- General Contact Form -->
-            <section class="form-card" id="general-contact">
-                <div class="form-card-header">
-                    <h2>💬 General Inquiry</h2>
-                    <p>Questions about our community or events?</p>
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <h2>How to Reach Us</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <h3>Location</h3>
+                    <p>123 Green Street<br>Environmental District<br>Global City, GC 12345</p>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="contact-name">Name *</label>
-                        <input type="text" id="contact-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Email *</label>
-                        <input type="email" id="contact-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-phone">Phone</label>
-                        <input type="tel" id="contact-phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Message *</label>
-                        <textarea id="contact-message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </section>
 
-            <!-- Donate Cash Form -->
-            <section class="form-card" id="donate-cash">
-                <div class="form-card-header">
-                    <h2>💵 Donate Cash</h2>
-                    <p>Support our educational programs</p>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="material-symbols-outlined">phone</span>
+                    </div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+1234567890">+1 (234) 567-8900</a><br><a href="tel:+0987654321">+0 (987) 654-3210</a></p>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="cash-name">Full Name *</label>
-                        <input type="text" id="cash-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cash-email">Email *</label>
-                        <input type="email" id="cash-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cash-amount">Donation Amount *</label>
-                        <select id="cash-amount" name="amount" required>
-                            <option value="">Select amount</option>
-                            <option value="25">$25</option>
-                            <option value="50">$50</option>
-                            <option value="100">$100</option>
-                            <option value="250">$250</option>
-                            <option value="custom">Custom Amount</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cash-message">Message (Optional)</label>
-                        <textarea id="cash-message" name="message" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn green-btn">Proceed to Payment</button>
-                </form>
-            </section>
 
-            <!-- Donate Materials Form -->
-            <section class="form-card" id="donate-materials">
-                <div class="form-card-header">
-                    <h2>📦 Donate Materials</h2>
-                    <p>Contribute items for upcycling</p>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@ecosyst.org">info@ecosyst.org</a><br><a href="mailto:support@ecosyst.org">support@ecosyst.org</a></p>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="materials-name">Full Name *</label>
-                        <input type="text" id="materials-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="materials-email">Email *</label>
-                        <input type="email" id="materials-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="materials-phone">Phone *</label>
-                        <input type="tel" id="materials-phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="materials-type">Material Type *</label>
-                        <select id="materials-type" name="material-type" required>
-                            <option value="">Select type</option>
-                            <option value="furniture">Furniture</option>
-                            <option value="textiles">Textiles/Fabric</option>
-                            <option value="wood">Wood/Pallets</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="materials-description">Description *</label>
-                        <textarea id="materials-description" name="description" rows="3" required placeholder="Describe the materials you'd like to donate..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn yellow-btn">Submit Donation</button>
-                </form>
-            </section>
-
-            <!-- Donate Venue Form -->
-            <section class="form-card" id="donate-venue">
-                <div class="form-card-header">
-                    <h2>🏢 Donate Venue</h2>
-                    <p>Offer space for workshops</p>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="venue-name">Contact Name *</label>
-                        <input type="text" id="venue-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="venue-organization">Organization *</label>
-                        <input type="text" id="venue-organization" name="organization" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="venue-email">Email *</label>
-                        <input type="email" id="venue-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="venue-phone">Phone *</label>
-                        <input type="tel" id="venue-phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="venue-location">Venue Location *</label>
-                        <input type="text" id="venue-location" name="location" required placeholder="City, State">
-                    </div>
-                    <div class="form-group">
-                        <label for="venue-capacity">Capacity *</label>
-                        <input type="number" id="venue-capacity" name="capacity" required placeholder="Number of people">
-                    </div>
-                    <div class="form-group">
-                        <label for="venue-details">Venue Details *</label>
-                        <textarea id="venue-details" name="details" rows="3" required placeholder="Describe your space, amenities, availability..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn green-btn">Submit Venue Offer</button>
-                </form>
-            </section>
-
-            <!-- Donate Service Form -->
-            <section class="form-card" id="donate-service">
-                <div class="form-card-header">
-                    <h2>🛠️ Donate Service</h2>
-                    <p>Share your skills with the community</p>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="service-name">Full Name *</label>
-                        <input type="text" id="service-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service-email">Email *</label>
-                        <input type="email" id="service-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service-phone">Phone *</label>
-                        <input type="tel" id="service-phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service-type">Service Type *</label>
-                        <select id="service-type" name="service-type" required>
-                            <option value="">Select service</option>
-                            <option value="carpentry">Carpentry</option>
-                            <option value="sewing">Sewing/Textiles</option>
-                            <option value="design">Design/Creative</option>
-                            <option value="teaching">Teaching/Training</option>
-                            <option value="marketing">Marketing/PR</option>
-                            <option value="photography">Photography</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="service-description">Service Description *</label>
-                        <textarea id="service-description" name="description" rows="3" required placeholder="Describe the services you can provide..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn yellow-btn">Submit Service Offer</button>
-                </form>
-            </section>
-
-            <!-- Registration Form -->
-            <section class="form-card" id="register">
-                <div class="form-card-header">
-                    <h2>✍️ Register</h2>
-                    <p>Join our community movement</p>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="register-name">Full Name *</label>
-                        <input type="text" id="register-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="register-email">Email *</label>
-                        <input type="email" id="register-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="register-phone">Phone *</label>
-                        <input type="tel" id="register-phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="register-interest">Area of Interest *</label>
-                        <select id="register-interest" name="interest" required>
-                            <option value="">Select interest</option>
-                            <option value="workshops">Attend Workshops</option>
-                            <option value="volunteer">Volunteer</option>
-                            <option value="donate">Donate Items</option>
-                            <option value="partner">Partnership</option>
-                            <option value="all">All of the above</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="register-message">Tell us about yourself</label>
-                        <textarea id="register-message" name="message" rows="3" placeholder="Why do you want to join EcoSyst?"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn green-btn">Complete Registration</button>
-                </form>
-            </section>
+            </div>
         </div>
-    </main>
-    
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>About EcoSyst</h3>
-                <p>A community-led movement to redefine how we value our resources by turning yesterday's clutter into tomorrow's treasure.</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                    <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Send us a Message</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="primary-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register-section">
+        <div class="container">
+            <h2>Become a Member</h2>
+            <p class="section-intro">Join our community of environmental advocates</p>
+            
+            <form class="registration-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="City, Country" />
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Areas of Interest</label>
+                    <div class="checkboxes">
+                        <label><input type="checkbox" name="interests" value="tree-planting" /> Tree Planting</label>
+                        <label><input type="checkbox" name="interests" value="ocean-cleanup" /> Ocean Cleanup</label>
+                        <label><input type="checkbox" name="interests" value="education" /> Education</label>
+                        <label><input type="checkbox" name="interests" value="farming" /> Sustainable Farming</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="primary-button">Register Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section">
+        <div class="container">
+            <h2>Volunteer With Us</h2>
+            <p class="section-intro">Dedicated hands-on opportunities for environmental advocates</p>
+            
+            <div class="volunteer-grid">
+                <div class="volunteer-card">
+                    <h3>Field Work</h3>
+                    <p>Participate in tree planting, ecosystem restoration, and environmental cleanup projects</p>
+                    <a href="#" class="cta-link">Learn More →</a>
+                </div>
+
+                <div class="volunteer-card">
+                    <h3>Community Education</h3>
+                    <p>Help teach communities about sustainable practices and environmental conservation</p>
+                    <a href="#" class="cta-link">Learn More →</a>
+                </div>
+
+                <div class="volunteer-card">
+                    <h3>Administrative Support</h3>
+                    <p>Assist with project coordination, data management, and organizational tasks</p>
+                    <a href="#" class="cta-link">Learn More →</a>
+                </div>
+
+                <div class="volunteer-card">
+                    <h3>Communications</h3>
+                    <p>Help spread the message about our initiatives through social media and content</p>
+                    <a href="#" class="cta-link">Learn More →</a>
                 </div>
             </div>
 
+            <div class="volunteer-form-container">
+                <h3>Express Interest in Volunteering</h3>
+                <form class="volunteer-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vol-name">Full Name</label>
+                            <input type="text" id="vol-name" name="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vol-email">Email</label>
+                            <input type="email" id="vol-email" name="email" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vol-interests">What are you interested in?</label>
+                        <select id="vol-interests" name="interests" required>
+                            <option value="">Select an option</option>
+                            <option value="field">Field Work</option>
+                            <option value="education">Community Education</option>
+                            <option value="admin">Administrative Support</option>
+                            <option value="comms">Communications</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="primary-button">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="donation-section">
+        <div class="container">
+            <h2>Support Our Mission</h2>
+            <p class="section-intro">Your donation directly funds environmental restoration and community programs</p>
+            
+            <div class="donation-options">
+                <div class="donation-card">
+                    <h3>$10</h3>
+                    <p>Plant 1 Tree</p>
+                    <button class="primary-button">Donate Now</button>
+                </div>
+
+                <div class="donation-card featured">
+                    <h3>$50</h3>
+                    <p>Support 5 Community Members</p>
+                    <button class="primary-button">Donate Now</button>
+                </div>
+
+                <div class="donation-card">
+                    <h3>$100</h3>
+                    <p>Fund One Day of Programs</p>
+                    <button class="primary-button">Donate Now</button>
+                </div>
+
+                <div class="donation-card">
+                    <h3>$500</h3>
+                    <p>Ocean Cleanup Initiative</p>
+                    <button class="primary-button">Donate Now</button>
+                </div>
+            </div>
+
+            <div class="custom-donation">
+                <h3>Custom Amount</h3>
+                <form class="custom-donation-form">
+                    <div class="form-group">
+                        <label for="amount">Amount (USD)</label>
+                        <input type="number" id="amount" name="amount" min="1" placeholder="Enter amount" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-email">Email Address</label>
+                        <input type="email" id="donor-email" name="email" required />
+                    </div>
+
+                    <button type="submit" class="primary-button">Make Donation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Thank You for Your Interest</h2>
+            <p>Whether you're here to connect, volunteer, or donate, we appreciate your commitment to environmental sustainability.</p>
+            <div class="cta-buttons">
+                <a href="index.html" class="primary-button">Back to Home</a>
+                <a href="about.html" class="primary-button">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h4>About EcoSyst</h4>
+                <p>Building sustainable communities through ecosystem restoration and environmental advocacy.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="our-impact.html">Our Impact</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html#register">Register</a></li>
                 </ul>
             </div>
 
+            <!-- Get Involved -->
             <div class="footer-section">
-                <h3>Get Involved</h3>
+                <h4>Get Involved</h4>
                 <ul>
-                    <li><a href="contact.html#donate-materials">Donate Materials</a></li>
-                    <li><a href="contact.html#donate-service">Volunteer</a></li>
-                    <li><a href="contact.html#donate-venue">Host Workshop</a></li>
-                    <li><a href="contact.html#donate-cash">Partner With Us</a></li>
-                    <li><a href="index.html">Community Events</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
+            <!-- Newsletter -->
             <div class="footer-section">
-                <h3>Newsletter</h3>
-                <p>Stay updated with our latest community trades and upcycling events!</p>
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest initiatives and impact stories.</p>
                 <form class="newsletter-form">
-                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <input 
+                        type="email" 
+                        placeholder="your@email.com" 
+                        required 
+                        class="newsletter-input"
+                    />
                     <button type="submit" class="newsletter-btn">Subscribe</button>
                 </form>
             </div>
         </div>
 
+        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <p>&copy; 2024 EcoSyst Community. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-            </div>
         </div>
     </footer>
-    
-    <script>
-        // Hamburger menu toggle
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navContainer = document.querySelector('.navbar-container');
-        const dropdowns = document.querySelectorAll('.dropdown');
-        const navbar = document.querySelector('.navbar');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navContainer.classList.toggle('active');
-        });
-        
-        // Mobile dropdown handling
-        dropdowns.forEach(dropdown => {
-            const btn = dropdown.querySelector('.nav-btn');
-            btn.addEventListener('click', (e) => {
-                if (window.innerWidth < 768) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                }
-            });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.navbar')) {
-                hamburger.classList.remove('active');
-                navContainer.classList.remove('active');
-                dropdowns.forEach(d => d.classList.remove('active'));
-            }
-        });
-
-        // Navbar scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-        
-        // Smooth scroll to form sections
-        document.addEventListener('DOMContentLoaded', () => {
-            if (window.location.hash) {
-                setTimeout(() => {
-                    const element = document.querySelector(window.location.hash);
-                    if (element) {
-                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }, 100);
-            }
-        });
-    </script>
 </body>
 </html>

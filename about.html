@@ -1,202 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | EcoSyst</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta 
+        name="description" 
+        content="Learn about EcoSyst - our mission to empower communities through environmental sustainability and ecosystem restoration"
+    />
+    <meta 
+        name="keywords" 
+        content="about us, mission, sustainability, community, environment"
+    />
+    
+    <!-- Icon Libraries -->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>About Us - EcoSyst Community</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="index.html" class="navbar-logo">
-            <img src="logo.png" alt="ecosyst logo">
-        </a>
-        
-        <span class="navbar-brand">EcoSyst</span>
-        
-        <button class="hamburger-menu" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        
-        <div class="navbar-container"> 
-            <div class="dropdown">
-                <button class="nav-btn">ABOUT US <span class="arrow">▼</span></button>
-                <div class="dropdown-content">
-                    <a href="about.html#mission">Our Mission</a>
-                    <a href="about.html#offerings">What We Offer</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="navbar-brand">EcoSyst</span>
+            </a>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <input type="checkbox" id="menu-toggle" />
+            <div class="mobile-menu">
+                <label for="menu-toggle" class="menu">
+                    <span></span>
+                </label>
             </div>
-
-            <a href="our-impact.html" class="nav-btn">OUR IMPACT</a>
-
-            <div class="dropdown">
-                <button class="nav-btn">COMMUNITY <span class="arrow">▼</span></button>
-                <div class="dropdown-content">
-                    <a href="index.html">Our Community</a>
-                    <a href="contact.html#register">Register</a>
-                </div>
-            </div>
-
-            <a href="contact.html" class="nav-btn contact-btn">CONTACT US</a>
+            
+            <!-- Navigation Links -->
+            <ul class="navbar-container">
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="about.html" class="nav-btn">About Us</a></li>
+                <li><a href="our-impact.html" class="nav-btn">Our Impact</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+                <li class="nav-buttons">
+                    <a href="contact.html#register" class="primary-button">Register</a>
+                    <a href="contact.html#donate" class="primary-button">Donate</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    
-    <script>
-        // Hamburger menu toggle
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navContainer = document.querySelector('.navbar-container');
-        const dropdowns = document.querySelectorAll('.dropdown');
-        const navbar = document.querySelector('.navbar');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navContainer.classList.toggle('active');
-        });
-        
-        // Mobile dropdown handling
-        dropdowns.forEach(dropdown => {
-            const btn = dropdown.querySelector('.nav-btn');
-            btn.addEventListener('click', (e) => {
-                if (window.innerWidth < 768) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                }
-            });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.navbar')) {
-                hamburger.classList.remove('active');
-                navContainer.classList.remove('active');
-                dropdowns.forEach(d => d.classList.remove('active'));
-            }
-        });
-        
-        // Navbar scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-    </script>
 
-    <main class="about-container">
-        <section class="about-hero" id="mission">
-            <h1>About EcoSyst</h1>
-            <p>A neighborhood initiative dedicated to reducing waste through community-driven gifting.</p>
-        </section>
+    <!-- Page Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">About EcoSyst</div>
+                <h1 class="hero-title">
+                    Our Mission to Build 
+                    <span class="hero-gradient-text">Sustainable Communities</span>
+                </h1>
+                <p class="hero-description">
+                    Founded on the belief that environmental sustainability starts with community action, EcoSyst works to restore ecosystems and empower communities worldwide.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <section class="offerings" id="offerings">
-            <h2>What You Can Swap</h2>
-            <div class="icon-grid">
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="fas fa-utensils"></i></div>
-                    <span>KITCHEN</span>
+    <!-- Mission Section -->
+    <section id="mission" class="mission-section">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-content">
+                    <h2>Our Mission</h2>
+                    <p>At EcoSyst, we believe that the path to environmental sustainability lies in community empowerment and ecosystem restoration. Our mission is to:</p>
+                    <ul class="mission-list">
+                        <li><strong>Restore Ecosystems:</strong> Protect and regenerate natural habitats for biodiversity</li>
+                        <li><strong>Empower Communities:</strong> Equip local communities with tools and knowledge for sustainable living</li>
+                        <li><strong>Drive Change:</strong> Create lasting environmental impact through collective action</li>
+                        <li><strong>Build Partnerships:</strong> Collaborate with organizations worldwide for greater impact</li>
+                    </ul>
                 </div>
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="fas fa-bath"></i></div>
-                    <span>BATHROOM</span>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="fas fa-seedling"></i></div>
-                    <span>HOME & GARDEN</span>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="fas fa-paw"></i></div>
-                    <span>PETS</span>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="fas fa-child"></i></div>
-                    <span>KIDS & BABY</span>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-circle"><i class="fas fa-tools"></i></div>
-                    <span>DIY & TOOLS</span>
+                <div class="section-image">
+                    <img src="./images/mission.jpg" alt="Our mission - environmental restoration" />
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="how-it-works">
-            <div class="method-card">
-                <h3>Gifting</h3>
-                <p>Give items a second life by passing them to a neighbor in need.</p>
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="section-grid reverse">
+                <div class="section-image">
+                    <img src="./images/vision.jpg" alt="Our vision - sustainable future" />
+                </div>
+                <div class="section-content">
+                    <h2>Our Vision</h2>
+                    <p>We envision a world where every community has the resources, knowledge, and commitment to live sustainably. Through our initiatives, we're working to create:</p>
+                    <ul class="vision-list">
+                        <li>Thriving natural ecosystems worldwide</li>
+                        <li>Educated and empowered communities</li>
+                        <li>Reduced environmental degradation</li>
+                        <li>Equitable access to environmental resources</li>
+                        <li>A legacy of sustainability for future generations</li>
+                    </ul>
+                </div>
             </div>
-            <div class="method-card">
-                <h3>Trading</h3>
-                <p>Directly swap items you have for items you actually want.</p>
-            </div>
-            <div class="method-card">
-                <h3>Re-purposing</h3>
-                <p>Share materials and ideas to transform old items into new treasures.</p>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Core Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">public</span>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>Committed to environmental practices that benefit both people and planet</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">groups</span>
+                    </div>
+                    <h3>Community First</h3>
+                    <p>Centering the voices and needs of the communities we serve</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">handshake</span>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Working together with partners to amplify our environmental impact</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Creating innovative solutions to environmental challenges</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">verified</span>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>Operating with transparency and accountability in all our work</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">trending_up</span>
+                    </div>
+                    <h3>Impact</h3>
+                    <p>Measuring and maximizing positive environmental and social outcomes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <p class="section-intro">Dedicated professionals working towards environmental sustainability</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <span class="material-symbols-outlined">account_circle</span>
+                    </div>
+                    <h3>Leadership Team</h3>
+                    <p>Visionary leaders guiding our environmental mission with expertise and passion</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <span class="material-symbols-outlined">engineering</span>
+                    </div>
+                    <h3>Project Teams</h3>
+                    <p>Field experts implementing sustainable projects in communities worldwide</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <span class="material-symbols-outlined">school</span>
+                    </div>
+                    <h3>Education Team</h3>
+                    <p>Educators developing programs to build sustainability awareness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join Our Mission</h2>
+            <p>Be part of the solution. Support environmental sustainability and community empowerment.</p>
+            <div class="cta-buttons">
+                <a href="contact.html#register" class="primary-button">Register as Member</a>
+                <a href="contact.html#volunteer" class="primary-button">Volunteer With Us</a>
+                <a href="contact.html#donate" class="primary-button">Make a Donation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
+            <!-- About Section -->
             <div class="footer-section">
-                <h3>About EcoSyst</h3>
-                <p>A community-led movement to redefine how we value our resources by turning yesterday's clutter into tomorrow's treasure.</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                    <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+                <h4>About EcoSyst</h4>
+                <p>Building sustainable communities through ecosystem restoration and environmental advocacy.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
 
+            <!-- Quick Links -->
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="our-impact.html">Our Impact</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Join Community</a></li>
                 </ul>
             </div>
 
+            <!-- Get Involved -->
             <div class="footer-section">
-                <h3>Get Involved</h3>
+                <h4>Get Involved</h4>
                 <ul>
-                    <li><a href="#">Donate Materials</a></li>
-                    <li><a href="#">Volunteer</a></li>
-                    <li><a href="#">Host Workshop</a></li>
-                    <li><a href="#">Partner With Us</a></li>
-                    <li><a href="#">Community Events</a></li>
+                    <li><a href="contact.html#register">Register</a></li>
+                    <li><a href="contact.html#volunteer">Volunteer</a></li>
+                    <li><a href="contact.html#donate">Donate</a></li>
+                    <li><a href="contact.html">Partner With Us</a></li>
                 </ul>
             </div>
 
+            <!-- Newsletter -->
             <div class="footer-section">
-                <h3>Newsletter</h3>
-                <p>Stay updated with our latest community trades and upcycling events!</p>
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest initiatives and impact stories.</p>
                 <form class="newsletter-form">
-                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <input 
+                        type="email" 
+                        placeholder="your@email.com" 
+                        required 
+                        class="newsletter-input"
+                    />
                     <button type="submit" class="newsletter-btn">Subscribe</button>
                 </form>
             </div>
         </div>
 
+        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <p>&copy; 2024 EcoSyst Community. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-            </div>
         </div>
     </footer>
 </body>
