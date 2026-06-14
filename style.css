@@ -4,10 +4,10 @@
   --base-color-light: #424242;
   
   /* EcoSyst Brand Colors */
-  --primary-color: #1b5e20;        /* Dark Green */
+  --primary-color: #15941e;        /* Dark Green */
   --primary-light: #2e7d32;        /* Medium Green */
-  --secondary-color: #4caf50;      /* Light Green */
-  --accent-color: #FFD700;         /* Gold */
+  --secondary-color: #c886e0      /* Light Green */
+  --accent-color: #c886e0;         /* Gold */
   
   /* Functional Colors */
   --success-color: #2ecc71;
@@ -16,8 +16,8 @@
   --info-color: #3498db;
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #1b5e20, #2e7d32, #4caf50);
-  --gradient-accent: linear-gradient(90deg, #FFD700, #fff982, #FFD700);
+  --gradient-primary: linear-gradient(135deg, #5d455f, #845691, #6e4c7a);
+  --gradient-accent: linear-gradient(90deg, #b078ab, #92467c, #d356af);
   
   /* Typography */
   --font-stack: "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -120,7 +120,7 @@ p {
 nav {
   position: sticky;
   top: 0;
-  background: white;
+  background: rgb(237, 233, 239);
   box-shadow: var(--shadow-md);
   z-index: 1000;
   transition: var(--transition);
@@ -435,7 +435,7 @@ nav .container {
 }
 
 .feature-card {
-  background: white;
+  background: rgb(237, 233, 239);
   padding: var(--spacing-xl);
   border-radius: 15px;
   text-align: center;
@@ -474,7 +474,7 @@ nav .container {
 }
 
 .initiative-card {
-  background: white;
+  background: rgb(237, 233, 239);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
